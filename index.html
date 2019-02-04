@@ -8,42 +8,58 @@
   <link rel="stylesheet" href="css/index.css">
   <title>Dream Big</title>
 </head>
-
+<body background="bg6.jpg"></body>
 <body>
     <div class="header"
-                <h1>Dream Big</h1>           
+                <h1>Dream Big </h1>     
+                      
     </div>
     <div class="tabs">
-            <div class="Login">
-              <span class="title"> HOMEPAGE </span>
-              <div data-tab="about" class="tab">ABOUT</div>
-              <div data-tab="donate" class="tab">DONATE</div>
-              <div data-tab="about" class="tab">PROJECTS</div>
-              <div data-tab="contact" class="tab">CONTACT US</div>
-            </div>
+            <nav class = "nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#login">Login</li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#donation">Donate Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+            </nav>
           </div>
           <div class="cards-container">
 
                 <!-- CARD COMPONENTS -->
-                <div class="card" data-tab="title">
+                <div class="card" data-tab="title" id = home>
+                    <h1>Home</h1>
                     <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Porro quae exercitationem mollitia hic? Molestias magni veritatis 
                     ea consequuntur cumque error, deserunt, voluptate nemo qui aperiam
                     assumenda optio numquam dolore neque.</p>     
                 </div>
-                <div class="card" data-tab="title">
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Porro quae exercitationem mollitia hic? Molestias magni veritatis 
-                    ea consequuntur cumque error, deserunt, voluptate nemo qui aperiam
-                    assumenda optio numquam dolore neque.</p>     
+                <div class="card" data-tab="title" id = login>
+                    <h1>Login</h1>
+                        <form method = "GET" action="action.php">
+                                Email     :     <input type="email" name="email" required><br>
+                                Password   : <input type="Password" name="password" min="5"><br>
+                                Submit :<input type="submit" value="Submit"> <br>
+	                    </form>
+                       
                     </div>
-                <div class="card" data-tab="title">
+                <div class="card" data-tab="title" id =about>
+                    <h1> About Us</h1>
                     <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Porro quae exercitationem mollitia hic? Molestias magni veritatis 
                     ea consequuntur cumque error, deserunt, voluptate nemo qui aperiam
                     assumenda optio numquam dolore neque.</p>     
                 </div>
-                <div class="card" data-tab="title">
+                <div class="card" data-tab="title"id = donation>
+                    <h1>Donation</h1>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Porro quae exercitationem mollitia hic? Molestias magni veritatis 
+                    ea consequuntur cumque error, deserunt, voluptate nemo qui aperiam
+                    assumenda optio numquam dolore neque.</p>     
+                </div>
+                <div class="card" data-tab="title"id = contact>
+                    <h1>Contact</h1>
                     <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Porro quae exercitationem mollitia hic? Molestias magni veritatis 
                     ea consequuntur cumque error, deserunt, voluptate nemo qui aperiam
