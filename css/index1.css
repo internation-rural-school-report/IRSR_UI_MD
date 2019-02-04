@@ -1,0 +1,166 @@
+/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 100%;
+    margin-bottom: 2%;
+}
+
+.container {
+    width: 97%;
+    margin: auto;
+}
+header {
+        justify-content: center;
+    }
+    header h1{
+    font-size: 5rem;
+    padding-top: 100px;
+    text-transform: uppercase;
+    line-height: 10.75rem;
+    display: flex;
+    flex-wrap: flex;
+    justify-content: center;
+    width: 100%;
+    }
+    header p{
+    width :97%;
+    font-size: 15px;
+    margin: 5%;
+}
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    header nav a {
+        width: 33%;
+        display: flex;
+        flex-wrap: flex;
+        justify-content:center;
+        margin: 0 33%;
+        padding: 20px 0;
+        font-size: 1.8rem;
+        border: 1px solid gray;
+        text-decoration: none;
+        color: #b0b0b0;
+        
+    }
+
+   
+    header nav a:hover {
+        background: gray;
+    }
+/* Header Styles */
+@media (min-width: 700px) {
+        header {
+            width: 100%;
+        }
+        header p{
+            width :70%;
+            font-size: 20px;
+            margin: 0 25%;
+        }
+
+        header h1{
+            margin-top: 200px;
+            font-size: 5rem;
+            padding-top: 10px;
+            padding-bottom: 0;
+            text-transform: uppercase;
+            line-height: 10.75rem;
+            display: flex;
+            flex-wrap: flex;
+            justify-content: center;
+            width: 100%;
+
+        }
+        header nav {
+            margin-top: 5%;   
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 100%;
+
+            
+        }
+        header nav a {
+            text-decoration: none;
+            color: #b0b0b0;
+            font-size: 1.6rem;
+
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+}
+
+
+    
+
+    
