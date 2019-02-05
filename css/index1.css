@@ -119,12 +119,12 @@ html, body {
 }
 body {
     background-image: url("../image/bg7.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;  
     background-attachment: fixed;
-    height: 100%;
-    width: 100%;
+    height: 100%; 
+    width: 100%; 
     background-size: cover;
-   background-position: center;
+    background-position: center;
   }
 
 h1, h2, h3, h4, h5 {
@@ -133,21 +133,38 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 2%;
     font-weight: 600px;
 }
-
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 .container {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
 }
+.bg_image{
+    background-image: url(../img/bg7.jpg);
+     background-size: cover;
+     background-position: center;
+     height: 100%;
+     width: 100%;
+  } 
+  header .inner{
+    width: 90%;
+    max-height: 50rem;
+    padding: 3rem 2 rem; */
+    overflow: hidden;
+    margin: 20% auto 5% auto; */
+    border-top-color: initial;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
 header {
         justify-content: center;
+        
     }
     header h1{
-    font-size: 2.75rem;
-    padding-top: 100px;
+    font-size: 2.25rem;
+    line-height: 1.4;
     text-transform: uppercase;
-    line-height: 5.75rem;
     display: flex;
     flex-wrap: flex;
     justify-content: center;
@@ -155,92 +172,121 @@ header {
     width: 87%;
     color : white;
     margin: 0 10%;
- 
+    letter-spacing: .5rem;
     }
     header p{
-    width :97%;
-    font-size: 15px;
+    width :90%;
+    font-size: 1rem;
+    letter-spacing: .2rem;
     margin: 5%;
-    color: rgb(223, 226, 213);
+    color:white;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    text-align: center;
 }
-    header nav {
+    header tabs {
         width: 100%;
         flex-direction: column;
-        margin: 0;
+        margin: auto;
         padding: 0;
-
+        color: white;
     }
-    header nav a {
+    header  .tabs .topics .tab {
         width: 33%;
         display: flex;
         flex-wrap: flex;
         justify-content:center;
         margin: 0 33%;
-        padding: 20px 0;
-        font-size: 1.8rem;
-        border: 1px solid gray;
+        padding: 0 1.25rem 0 1.45rem;
+        font-size: 1.2rem;
+        border: 1px solid white;
+        line-height: 4.75rem;
         text-decoration: none;
-        color: #e7dbdb;
-        
+        color:white;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
     }
-    header nav a:hover {
-        background: rgb(34, 29, 29);
+    header  .tab:hover {
+        background: rgb(34, 29, 29); 
     }
+    .cards-container .card {
+        border-bottom: 1px solid lightgrey;
+        display: flex;
+        justify-content: space-between;
+        align-items: none;
+        flex-direction: column;
+        background-color: #fff;
+        width: 380px;
+        margin-bottom: 16px;
+        padding: 24px;
+      }
+      .cards-container .card .headline {
+        font-size: 25px;
+        font-family: Didot, serif;
+      }
+    
+
 /* Header Styles for dekstop */
-@media (min-width: 700px) {
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width: 500px) {
         header {
             width: 100%;
+            margin: auto;
+        }  
+        header .inner{
+            width: 60%;
+            max-height: 50rem;
+            padding: 3rem 2 rem; 
+            overflow: hidden;
+            margin: 10% 20% 0 20%;
+            border-top-color: initial;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
         }
-        header p{
-            width :80%;
-            font-size: 20px;
-            margin: 0 10%;
-        }
-        header h1{
-            margin-top: 200px;
-            font-size: 3.5rem;
-            padding-top: 10px;
-            padding-bottom: 0;
+        p{
+            width: 60%;
+            font-size: 1.2rem;
+            margin: 0 auto 4%;
             text-transform: uppercase;
-            line-height: 10.75rem;
+            letter-spacing: .2rem;
+            line-height: 2rem;
+            text-align: center;
+            padding-top: 2%;
+        }
+        h1{     
+            font-size: 3.5rem;
+            padding-top: 5%;
+            border : 0;
+            text-transform: uppercase;
+            line-height: 3.75rem;
             display: flex;
             flex-wrap: flex;
             justify-content: center;
-            width: 100%;
             color: white;
-            margin: auto;
+            margin: 4% auto;
+            align-content: center;
         }
-    header nav {
-        width: 90%;
+        header .topics {
+        width: 35%;
         flex-direction: row;
         display: flex;
         flex-wrap: wrap;
-        margin: 0% 10%;
-        padding: 10% 0;
-    }
-    header nav a {
-        width: 22%;
+        margin: auto;
+        padding: 5% 0;
+        color: white;
+        }
+        header .tabs .topics .tab {
+        width: 25%;
         margin: 0%;
-        padding: 2%;
-        font-size: 1.8rem;
-        border: 1px solid gray;
+        font-size: 1.2rem;
+        letter-spacing: .2rem;
         text-decoration: none;
-        color: #e7dbdb;
         text-transform: uppercase; 
-    }
-
-        header nav a:hover {
+        line-height: 3.9rem;
+        }
+        header .tab:hover {
             text-decoration: none;
             color: rgb(34, 29, 29;
-        }
+        }          
 }
-.bg_image{
-  background-image: url(../img/bg6.jpg);
-   background-size: cover;
-   background-position: center;
-   height: 100%;
-   width: 100%;
-}
-
-
-    
