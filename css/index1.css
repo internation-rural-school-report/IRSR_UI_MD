@@ -118,6 +118,9 @@ html, body {
     width: 100%;  
 }
 body {
+    width: 100%; 
+}
+.container{
     background-image: url("../image/bg7.jpg");
     background-repeat: no-repeat;  
     background-attachment: fixed;
@@ -125,6 +128,8 @@ body {
     width: 100%; 
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
 h1, h2, h3, h4, h5 {
@@ -134,33 +139,20 @@ h1, h2, h3, h4, h5 {
     font-weight: 600px;
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
-.container {
-    width: 100%;
-    margin: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
+header {
+    justify-content: center;  
 }
-.bg_image{
-    background-image: url(../img/bg7.jpg);
-     background-size: cover;
-     background-position: center;
-     height: 100%;
-     width: 100%;
-  } 
   header .inner{
     width: 90%;
     max-height: 50rem;
-    padding: 3rem 2 rem; */
+    padding: 3rem 2rem;
     overflow: hidden;
-    margin: 20% auto 5% auto; */
+    margin: 20% auto 5% auto; 
     border-top-color: initial;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
 }
-header {
-        justify-content: center;
-        
-    }
+
     header h1{
     font-size: 2.25rem;
     line-height: 1.4;
@@ -177,7 +169,6 @@ header {
     header p{
     width :90%;
     font-size: 1rem;
-    letter-spacing: .2rem;
     margin: 5%;
     color:white;
     letter-spacing: .3rem;
@@ -210,20 +201,46 @@ header {
     header  .tab:hover {
         background: rgb(34, 29, 29); 
     }
+    .cards-container{
+        width : 100%;
+        margin : auto;
+        align-content: center;
+        border-top: 1px dotted pink;
+    }
     .cards-container .card {
-        border-bottom: 1px solid lightgrey;
+        border-bottom: 1px solid white;
         display: flex;
-        justify-content: space-between;
-        align-items: none;
-        flex-direction: column;
-        background-color: #fff;
-        width: 380px;
-        margin-bottom: 16px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column; 
+        width: 80%;
+        height: 500px;
         padding: 24px;
+        margin: 0 auto;
+        color: white;
+        border-bottom: 3px solid pink;
       }
       .cards-container .card .headline {
-        font-size: 25px;
-        font-family: Didot, serif;
+        text-transform: uppercase;
+        margin: 0 auto;
+        font-size: 2.25rem;
+        font-family: 'inherit';
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+        line-height: 2.8rem;
+        text-align: center;
+      }
+      .cards-container .card p{
+        width: 100%;
+        font-size: 1rem;
+        letter-spacing: .3rem;
+        text-transform: uppercase;
+        line-height: 2rem;
+        text-align: center;
+        margin: 5%;
+        text-align: center;
+          
       }
     
 
@@ -287,6 +304,38 @@ header {
         }
         header .tab:hover {
             text-decoration: none;
-            color: rgb(34, 29, 29;
-        }          
+            color: rgb(34, 29, 29);
+        }  
+        .cards-container {
+            width : 100%;
+            margin : auto;
+            align-content: center;
+            border-top: 1px dotted pink;
+        }
+    .cards-container .card {
+            border-bottom: 1px solid white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column; 
+            width: 50%;
+            height: 500px;
+            margin: 0 auto;
+            color: white;
+            border-bottom: 3px solid pink;
+          }
+          .cards-container .card .headline {
+            letter-spacing: .2rem;
+            font-size: 2.25rem;
+            line-height: 1.4;
+ 
+          }       
+          .cards-container .card p{
+            width: 100%;
+            font-size: 1rem;
+            margin: 5%;
+            letter-spacing: .3rem;
+            line-height: 2rem;
+          }     
 }
