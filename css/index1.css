@@ -176,7 +176,24 @@ header {
     line-height: 2rem;
     text-align: center;
 }
-    header tabs {
+.btn button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 15rem;
+    height: 3rem;
+    cursor: pointer;
+    padding: .8rem;
+    margin : 1% auto;
+    -webkit-transition: background-color 0.5s ease;
+    background-color: olive;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'inherit';
+    letter-spacing: .1rem;
+}
+    header .tabs {
         width: 100%;
         flex-direction: column;
         margin: auto;
@@ -197,13 +214,14 @@ header {
         color:white;
         text-transform: uppercase;
         letter-spacing: .2rem;
+        cursor: pointer;
     }
     header  .tab:hover {
         background: rgb(34, 29, 29); 
     }
     .cards-container{
         width : 100%;
-        margin : auto;
+        margin : 5% auto 0 auto;
         align-content: center;
         border-top: 1px dotted pink;
     }
