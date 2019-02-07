@@ -299,6 +299,7 @@ header h1 {
   color: white;
   letter-spacing: 0.3rem;
   font-family: 'inherit';
+  font-weight: bold;
 }
 @media (min-width: 1000px) {
   header h1 {
@@ -330,25 +331,30 @@ header p {
     font-size: 1.3rem;
   }
 }
-.btn button {
+
+.btn button{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 15rem;
   height: 3rem;
   cursor: pointer;
-  padding: 0.8rem;
-  margin: 1% auto;
+  padding: 0.6rem;
+  margin: 1% auto 5%;
   transition: background-color 0.5s ease;
-  background-color: olive;
+  background-color: rgb(39, 39, 36);
   border-radius: 5px;
   color: white;
   text-transform: uppercase;
   font-family: 'inherit';
   letter-spacing: 0.1rem;
-  margin-top: 1%;
-  margin-bottom: 5%;
 }
+.btn a :hover{
+  background-color: olivedrab;
+}
+  .btn a {
+    text-decoration: none;
+  }
 @media (min-width: 1000px) {
   header .topics {
     width: 30%;
@@ -382,7 +388,9 @@ header .tabs .tab {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  
 }
+
 @media (min-width: 1000px) {
   header .tabs .tab {
     width: 25%;
@@ -437,6 +445,7 @@ header .tabs .tab:hover {
   text-transform: uppercase;
   line-height: 2.8rem;
   text-align: center;
+  font-weight: bold;
 }
 .cards-container p {
   width: 100%;
@@ -462,7 +471,4 @@ header .tabs .tab:hover {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
-}
-#contact{
-    font-size: 25px;
 }

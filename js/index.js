@@ -40,5 +40,4 @@ class TabItem {
     console.log('I am printing');
     }
 }
-
 let links = document.querySelectorAll('.tab').forEach(tab => new TabLink(tab)); 
