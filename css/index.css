@@ -258,6 +258,9 @@ h5 {
   margin-bottom: 2%;
   font-weight: 600px;
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   justify-content: center;
 }
