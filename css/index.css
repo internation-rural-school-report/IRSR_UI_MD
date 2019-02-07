@@ -331,11 +331,16 @@ header p {
     font-size: 1.3rem;
   }
 }
-
-.btn button{
+.btn{
+  width: 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 2% auto;
+}
+
+.btn button{
+  display: flex;
   width: 15rem;
   height: 3rem;
   cursor: pointer;
@@ -454,6 +459,12 @@ header .tabs .tab:hover {
   line-height: 2rem;
   margin: 0 auto;
   text-align: center;
+}
+@media (min-width: 1000px) {
+  .cards-container p{
+    line-height: 2.2rem;
+    font-size: 1.3rem;
+  }
 }
 .cards-container .tabs-item-selected {
   display: block;
