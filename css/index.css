@@ -344,7 +344,7 @@ header p {
   width: 15rem;
   height: 3rem;
   cursor: pointer;
-  padding: 0.6rem;
+ justify-content: center;
   margin: 1% auto 5%;
   transition: background-color 0.5s ease;
   background-color: rgb(39, 39, 36);
@@ -353,6 +353,7 @@ header p {
   text-transform: uppercase;
   font-family: 'inherit';
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 .btn a :hover{
   background-color: olivedrab;
@@ -413,7 +414,6 @@ header .tabs .tab:hover {
   width: 100%;
   margin: 5% auto 0 auto;
   align-content: center;
-  border-top: 1px dotted pink;
 }
 @media (min-width: 1000px) {
   .cards-container {
