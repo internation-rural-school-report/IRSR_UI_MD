@@ -1,4 +1,4 @@
-@media (min-width: 500px) {
+@media (min-width: 1000px) {
   min-width: 1000px;
   width: 100%;
 }
@@ -331,36 +331,33 @@ header p {
     font-size: 1.3rem;
   }
 }
-.btn{
-  width: 10%;
+.btn button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 2% auto;
-}
-
-.btn button{
-  display: flex;
   width: 15rem;
   height: 3rem;
   cursor: pointer;
- justify-content: center;
-  margin: 1% auto 5%;
+  padding: 0.8rem;
+  margin: 1% auto;
   transition: background-color 0.5s ease;
-  background-color: rgb(39, 39, 36);
+  background-color: olive;
   border-radius: 5px;
   color: white;
   text-transform: uppercase;
   font-family: 'inherit';
   letter-spacing: 0.1rem;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  background: black;
+}
+.btn a {
+  text-decoration: none;
   text-align: center;
 }
-.btn a :hover{
-  background-color: olivedrab;
+a :hover {
+  background: olivedrab;
 }
-  .btn a {
-    text-decoration: none;
-  }
 @media (min-width: 1000px) {
   header .topics {
     width: 30%;
@@ -369,6 +366,17 @@ header p {
     flex-wrap: wrap;
     margin: auto;
     padding: 2% 0 0 0;
+    color: white;
+  }
+}
+@media (min-width: 500px) {
+  header .topics {
+    width: 60%;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 0 0;
     color: white;
   }
 }
@@ -394,13 +402,21 @@ header .tabs .tab {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  
 }
-
 @media (min-width: 1000px) {
   header .tabs .tab {
     width: 25%;
     margin: 0%;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    line-height: 3.9rem;
+  }
+}
+@media (min-width: 500px) {
+  header .tabs .tab {
+    width: 25%;
+    margin: 0;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     text-decoration: none;
@@ -450,7 +466,6 @@ header .tabs .tab:hover {
   text-transform: uppercase;
   line-height: 2.8rem;
   text-align: center;
-  font-weight: bold;
 }
 .cards-container p {
   width: 100%;
@@ -459,12 +474,6 @@ header .tabs .tab:hover {
   line-height: 2rem;
   margin: 0 auto;
   text-align: center;
-}
-@media (min-width: 1000px) {
-  .cards-container p{
-    line-height: 2.2rem;
-    font-size: 1.3rem;
-  }
 }
 .cards-container .tabs-item-selected {
   display: block;
