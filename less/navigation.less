@@ -63,17 +63,8 @@ a :hover{
     }
 
 header .topics {
-        @media @dekstop{
-        width: 30%;
-        flex-direction: row;
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-        padding: 2% 0 0 0;
-        color: white;
-    }
     @media @tablet{
-        width: 60%;
+        width: 55%;
         flex-direction: row;
         display: flex;
         flex-wrap: wrap;
@@ -81,6 +72,16 @@ header .topics {
         padding: 0 0 0;
         color: white;
     }
+        @media @dekstop{
+        width:45%;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 2% 0 0 0;
+        color: white;
+    }
+   
 }
 header .tabs {
     width: 100%;
@@ -93,22 +94,23 @@ header .tabs {
     width: 33%;
     padding: 0 1.25rem 0 1.45rem;
     .tabstyle;
-    @media  @dekstop{
-        width: 25%;
-        margin: 0%;
-        font-size: 1.2rem;
-        letter-spacing: .1rem;
-        text-decoration: none; 
-        line-height: 3.9rem;  
-    }
-    @media  @tablet{
-        width: 25%;
-        margin: 0;
-        font-size: 1.2rem;
-        letter-spacing: .1rem;
-        text-decoration: none; 
-        line-height: 3.9rem;  
-    }
+        @media  @tablet{
+            width: 25%;
+            margin: 0;
+            font-size: 1.2rem;
+            letter-spacing: .1rem;
+            text-decoration: none; 
+            line-height: 3.9rem;  
+        }
+        @media  @dekstop{
+            width: 25%;
+            margin: 0%;
+            font-size: 1.2rem;
+            letter-spacing: .1rem;
+            text-decoration: none; 
+            line-height: 3.9rem;  
+        }
+    
     }
     .tab:hover {
         background: rgb(34, 29, 29); 
